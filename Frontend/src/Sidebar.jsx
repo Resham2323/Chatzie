@@ -99,7 +99,7 @@ const deleteThread = async (threadId) => {
         <>
             <section className='sidebar'>
                 <button className='chatbtn' onClick={createNewChat}>
-                    <img src="src/assets/chatGpt-logo.jpg" alt="chatzie logo" className='logo' />
+                    <img src="/chatGpt-logo.jpg" alt="chatzie logo" className='logo' />
                     <span><i className="fa-solid fa-pen-to-square"></i></span>
                 </button>
 
