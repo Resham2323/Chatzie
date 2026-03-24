@@ -1,6 +1,6 @@
 import React from 'react';
 import './AuthLayout.css';
-import logo from './assets/blacklogo.png';
+
 
 const AuthLayout = ({ children, title }) => {
   return (

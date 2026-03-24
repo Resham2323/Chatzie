@@ -30,7 +30,7 @@ const Login = () => {
 
         try {
             console.log("Trigger login handle submit before request")
-            const response = await axios.post("http://localhost:8080/api/auth/login",
+            const response = await axios.post("https://chatzie-vqlb.onrender.com/api/auth/login",
                 {
                     email,
                     password

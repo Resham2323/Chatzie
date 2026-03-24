@@ -12,7 +12,7 @@ function Sidebar() {
 
 const deleteThread = async (threadId) => {
     try {
-        const res = await fetch(`http://localhost:8080/api/thread/${threadId}`, {
+        const res = await fetch(`https://chatzie-vqlb.onrender.com/api/thread/${threadId}`, {
             method: "DELETE",
             credentials: "include",
             headers: {
@@ -39,7 +39,7 @@ const deleteThread = async (threadId) => {
     const getAllThreads = async () => {
         console.log("getAllThreads called");
         try {
-            const response = await fetch("http://localhost:8080/api/thread", {
+            const response = await fetch("https://chatzie-vqlb.onrender.com/api/thread", {
                 headers: {
                     Authorization: `Bearer ${localStorage.getItem("token")}`
                 }
@@ -81,7 +81,7 @@ const deleteThread = async (threadId) => {
         setCurrThreadId(newThreadId);
 
         try {
-            const response = await fetch(`http://localhost:8080/api/thread/${newThreadId}`, {
+            const response = await fetch(`https://chatzie-vqlb.onrender.com/api/thread/${newThreadId}`, {
                 withCredentials: true
             });
             const res = await response.json();

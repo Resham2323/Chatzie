@@ -34,7 +34,7 @@ function ChatWindow() {
             })
         };
         try {
-            let response = await fetch("http://localhost:8080/api/chat", options);
+            let response = await fetch("https://chatzie-vqlb.onrender.com/api/chat", options);
             let res = await response.json();
             console.log(res);
             setReply(res.reply);
