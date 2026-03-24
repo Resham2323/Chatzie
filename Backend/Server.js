@@ -13,7 +13,7 @@ const PORT = 8080;
 app.use(express.json());
 app.use(cookieParser())
 app.use(cors({
-   origin: "https://chatzie-w7oa.vercel.app",
+   origin: "https://chatzie-rhyy.vercel.app",
    credentials: true
 }))
 
