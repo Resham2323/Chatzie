@@ -1,23 +1,30 @@
 import 'dotenv/config';
 import express from 'express';
 import cors from 'cors';
+import cookieParser from 'cookie-parser';
 import mongoose from 'mongoose';
 import chatRouter from './routes/chat.js' 
+import authRouter from './routes/user.js'
 // import axios from 'axios';
 
 const app = express();
 const PORT = 8080;
 
 app.use(express.json());
-app.use(cors());
+app.use(cookieParser())
+app.use(cors({
+   origin: "http://localhost:5173",
+   credentials: true
+}))
 
 app.use("/api", chatRouter);
+app.use("/api/auth", authRouter)
+
 
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
     ConnectDB();
 });
-
 
 const ConnectDB = async() => {
     try{
@@ -27,4 +34,5 @@ const ConnectDB = async() => {
         console.log("failed to connect DB", err);
     }
 }
+
 
