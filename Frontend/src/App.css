@@ -86,7 +86,7 @@ input:focus {
 .submit-btn {
     padding: 0.85rem;
     background: linear-gradient(135deg, #4b7cff, #1b6eff);
-    color: white;
+   
     border: none;
     border-radius: 10px;
     font-size: 1rem;

@@ -87,7 +87,7 @@ function ChatWindow() {
                     <div className="dropdown">
                         <div className="dropdownItem"><i className="fa-solid fa-gear"></i>Setting</div>
                         <div className="dropdownItem"><i className="fa-solid fa-cloud-arrow-up"></i>Upgrade Plan</div>
-                        <div className="dropdownItem" onClick={handleLogout}><i class="ri-logout-box-line"></i>Logout</div>
+                        <div className="dropdownItem" onClick={handleLogout}><i className="ri-logout-box-line"></i>Logout</div>
                     </div>
                 }
                 <Chat />
